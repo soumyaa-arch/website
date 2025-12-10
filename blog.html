@@ -1,0 +1,86 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Blog — UniSite</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Uni<span>Site</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="course.html">Course</a>
+        <a href="blog.html" class="active">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container" style="padding:2rem 0;">
+    <h1>Our Blog</h1>
+    <p>Read the latest articles, news, and student stories.</p>
+
+    <section class="blog-list">
+
+      <article class="card" style="margin-bottom:1.5rem;">
+        <h3>How to Choose the Right University</h3>
+        <p>
+          Picking a university is one of the most important decisions. Here are key factors to consider...
+        </p>
+        <a class="btn" href="#">Read More</a>
+      </article>
+
+      <article class="card" style="margin-bottom:1.5rem;">
+        <h3>Top 10 Skills Employers Look For</h3>
+        <p>
+          A degree opens the door, but real skills land the job. Let’s look at the most demanded skills today...
+        </p>
+        <a class="btn" href="#">Read More</a>
+      </article>
+
+      <article class="card" style="margin-bottom:1.5rem;">
+        <h3>The Future of Online Education</h3>
+        <p>
+          Online learning is reshaping education. Here’s how e-learning will evolve over the next decade...
+        </p>
+        <a class="btn" href="#">Read More</a>
+      </article>
+
+      <article class="card" style="margin-bottom:1.5rem;">
+        <h3>Student Success Stories</h3>
+        <p>
+          Meet our students and learn how they achieved their dreams with our guidance and resources...
+        </p>
+        <a class="btn" href="#">Read More</a>
+      </article>
+
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made by Soumyaa</p>
+      <small>&copy; <span id="year2"></span> UniSite</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year2').textContent = new Date().getFullYear();
+
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>

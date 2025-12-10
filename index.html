@@ -1,0 +1,91 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>World's Biggest University</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+<body>
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Uni<span>Site</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="course.html">Course</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <main>
+    <!-- Hero -->
+    <section class="hero">
+      <div class="container hero-inner">
+        <h1>World's Biggest University</h1>
+        <p>Making website is now one of the easiest things in the world. Learn HTML, CSS, and JavaScript.</p>
+        <a class="btn" href="contact.html">Visit Us To Know More</a>
+      </div>
+    </section>
+
+    <!-- Courses -->
+    <section class="courses container">
+      <h2>Courses We Offer</h2>
+      <div class="cards">
+        <article class="card">
+          <h3>Intermediate</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </article>
+        <article class="card">
+          <h3>Degree</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </article>
+        <article class="card">
+          <h3>Post-Graduation</h3>
+          <p>Lorem ipsum dolor sit amet, consectetur adipisicing elit.</p>
+        </article>
+      </div>
+    </section>
+
+    <!-- Campus / Facilities -->
+    <section class="facilities container">
+      <h2>Our Global Campus</h2>
+      <div class="grid">
+        <div class="tile">LONDON</div>
+        <div class="tile">NEW YORK</div>
+        <div class="tile">WASHINGTON</div>
+      </div>
+    </section>
+
+    <!-- Testimonials -->
+    <section class="testimonials container">
+      <h2>What Our Students Say</h2>
+      <div class="test-cards">
+        <blockquote>“Lorem ipsum dolor sit amet...” <cite>— Christine Berkley</cite></blockquote>
+        <blockquote>“Repudiandae nisi cumque quidem molestias.” <cite>— David Bekh</cite></blockquote>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="site-footer">
+    <div class="container">
+      <p>Made by Soumyaa</p>
+      <small>&copy; <span id="year"></span> UniSite</small>
+    </div>
+  </footer>
+
+  <script>
+    // header year
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    // simple mobile nav toggle
+    document.querySelector('.menu-toggle').addEventListener('click', function(){
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+</body>
+</html>

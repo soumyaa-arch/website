@@ -1,0 +1,96 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Courses — UniSite</title>
+  <link rel="stylesheet" href="css/style.css" />
+</head>
+
+<body>
+
+  <!-- Header -->
+  <header class="site-header">
+    <div class="container header-inner">
+      <a class="logo" href="index.html">Uni<span>Site</span></a>
+      <nav class="main-nav">
+        <a href="index.html">Home</a>
+        <a href="about.html">About</a>
+        <a href="course.html" class="active">Course</a>
+        <a href="blog.html">Blog</a>
+        <a href="contact.html">Contact</a>
+      </nav>
+      <button class="menu-toggle" aria-label="Toggle menu">☰</button>
+    </div>
+  </header>
+
+  <!-- Main Content -->
+  <main class="container" style="padding:2rem 0;">
+    <h1>Our Courses</h1>
+    <p>Choose from our wide range of high-quality academic and professional programs.</p>
+
+    <section class="courses">
+      <div class="cards">
+
+        <article class="card">
+          <h3>Intermediate Programs</h3>
+          <p>
+            Foundation-level courses designed to build strong academic skills.
+          </p>
+          <a class="btn" href="#">Learn More</a>
+        </article>
+
+        <article class="card">
+          <h3>Undergraduate Degrees</h3>
+          <p>
+            Choose from science, arts, business, and technology undergraduate programs.
+          </p>
+          <a class="btn" href="#">Learn More</a>
+        </article>
+
+        <article class="card">
+          <h3>Postgraduate Studies</h3>
+          <p>
+            Advance your career with our professional and research-based master's degrees.
+          </p>
+          <a class="btn" href="#">Learn More</a>
+        </article>
+
+        <article class="card">
+          <h3>Diploma Programs</h3>
+          <p>
+            Short-term intensive programs focused on practical skills.
+          </p>
+          <a class="btn" href="#">Learn More</a>
+        </article>
+
+        <article class="card">
+          <h3>Online Learning</h3>
+          <p>
+            Flexible self-paced learning with globally recognized certificates.
+          </p>
+          <a class="btn" href="#">Learn More</a>
+        </article>
+
+      </div>
+    </section>
+  </main>
+
+  <!-- Footer -->
+  <footer class="site-footer">
+    <div class="container">
+      <p> Made by Soumyaa</p>
+      <small>&copy; <span id="year"></span> UniSite</small>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById('year').textContent = new Date().getFullYear();
+
+    document.querySelector('.menu-toggle').addEventListener('click', function () {
+      document.querySelector('.main-nav').classList.toggle('open');
+    });
+  </script>
+
+</body>
+</html>
